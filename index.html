@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        nav.navbar{
+            display: flex;
+            position: absolute;
+            height: calc(7vh);
+            width: calc(100vw);
+            background-color: black;
+        }
+        nav.navmbl{
+            display: flex;
+            position: absolute;
+            height: calc(7vh);
+            width: calc(100vw);
+            background-color: black;
+        }
+        ul.navul{
+            margin-left: calc(60vw);
+        }
+        a.ataglist{
+            text-decoration: none;
+            color: skyblue;
+            text-shadow: -2px 2px 3px red;
+        }
+        div.icon{
+            display: flex;
+            text-shadow: -3px 3px 4px lightgreen;
+            position: absolute;
+            width: calc(20vw);
+            height: calc(5vh);
+            margin-top: calc(0vh);
+            padding: 1.5px;
+            color: whitesmoke;
+            font-size: xx-large;
+            /* background-color: bisque; */
+            font-family: cursive;
+            margin-left: calc(2vw);
+        }
+        li.navli{
+            margin-left: 10px;
+            display: inline-block;
+            padding-left: 20px;
+            color: whitesmoke;
+            font-size: larger;
+            text-shadow: 2px 2px 4px skyblue;
+        }
+        div.menu{
+            display: none;
+        }
+        ul.navul2{
+            display: none;
+        }
+        div.maindata{
+            display: flex;
+            position: absolute;
+            top: calc(10vh);
+            left: calc(5vw);
+            height: calc(50vh);
+            width: calc(90vw);
+            background-color: aqua;
+        }
+        div.initialinfo{
+            display: flex;
+            position: absolute;
+            top: calc(10vh);
+            left: calc(5vw);
+            height: calc(30vh);
+            width: calc(40vw);
+            background-color: gray;
+        }
+        span.hello{
+            display: flex;
+            position: absolute;
+            top: calc(1vh);
+            left: calc(2vw);
+            height: calc(5vh);
+            width: calc(30vw);
+            /* background-color: blue; */
+            font-size: calc(4vh);
+            text-shadow: -2px 2px 3px white;
+        }
+        span.iam{
+            display: flex;
+            position: absolute;
+            top: calc(6vh);
+            padding-top: calc(1vh);
+            left: calc(2vw);
+            height: calc(4vh);
+            width: calc(6vw);
+            font-size: calc(3vh);
+            text-shadow: -2px 2px 3px white;
+            /* background-color: blueviolet; */
+        }
+        span.mainname{
+            display: flex;
+            position: absolute;
+            top: calc(10vh);
+            left: calc(2vw);
+            height: calc(6vh);
+            width: calc(20vw);
+            font-size: calc(5vh);
+            color: red;
+            text-shadow: -2px 2px 3px black;
+            font-family: cursive;
+            /* background-color: red; */
+        }
+        
+        div.mainimage{
+            display: flex;
+            position: absolute;
+            top: calc(5vh);
+            left: calc(50vw);
+            height: calc(30vh);
+            width: calc(35vw);
+            background-color: gray;
+        }
+        img.mainimage{
+            display: flex;
+            position: absolute;
+            height: inherit;
+            width: inherit;
+        }
+        @media only screen and (max-width: 1350px){
+            ul.navul{
+                font-size: medium;
+                margin-left: calc(55vw);
+                /* background-color: aliceblue;
+                height: inherit;
+                margin-bottom: calc(15vh); */
+            }
+            nav.navbar{
+                display: flex;
+                position: absolute;
+                height: calc(8vh);
+                width: calc(100vw);
+            }
+            div.icon{
+                font-size: x-large;
+            }
+        }
+        @media only screen and (max-width: 1300px){
+            ul.navul{
+                margin-left: calc(50vw);
+            }
+        }
+        @media only screen and (max-width: 1150px ){
+            ul.navul{
+                margin-left: calc(47vw);
+                font-size: medium;
+            }
+        }
+        @media only screen and (max-width: 1000px){
+            ul.navul{
+                margin-left: calc(35vw);
+                font-size: small;
+            }
+            nav.navbar{
+                height: calc(6vh);
+            }
+        }
+        @media only screen and (max-width: 875px){
+            li.navli{
+                display: inline-block;
+            }
+            nav.navbar{
+                height: calc(6vh);
+            }
+            nav.navmbl{
+                display: flex;
+            }
+            ul.navul{
+                margin-left: calc(32vw);
+                font-size: medium;
+            }
+            div.icon{
+                font-size: xx-large;
+            }
+        }
+        @media only screen and (max-width : 768px){
+            nav.navbar{
+                height: calc(6vh);
+            }
+            div.icon{
+                display: flex;
+                position: absolute;
+                left: calc(0vw);
+                top: calc(0vh);
+                height: calc(1vh);
+                width: 15vw;
+                font-size: x-large;
+                text-align: center;
+            }
+            ul.navul{
+                margin-left: calc(25vw);
+                font-size: small;
+            }
+        }
+        @media only screen and (max-width: 715px){
+            ul.navul{
+                display: none;
+            }
+            div.menu{
+                display: flex;
+                position: absolute;
+                left: calc(90vw);
+                height: calc(6vh);
+                width: calc(6vw);
+                background-color: white;
+            }
+            img.menu{
+                display: inherit;
+                position: inherit;
+                height: inherit;
+                width: inherit;
+            }
+            ul.navul2{
+                display: none;
+                position: absolute;
+                top: calc(5vh);
+                left: calc(50vw);
+                height: calc(50vh);
+                width: calc(43vw);
+                background-color: darkred;
+                /* left: calc(60vw); */
+            }
+            li.navli2{
+                height: calc(8.5vh);
+                padding-top: calc(8vh);
+                padding-left: calc(12vw);
+                margin-right: calc(6vw);
+                list-style-type: none;
+                border-top: 1px solid black;
+                text-justify: center;
+                padding-top: calc(1vh);
+                font-size: larger;
+                text-shadow: -2px 2px 3px greenyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navmbl">
+        <div class="icon">Portfolio</div>
+        <div class="menu"><img src="./Images/list.svg" alt="" class="menu"></div>
+        <ul class="navul">
+            <li class="navli"><a href="#" class="ataglist">Home</a></li>
+            <li class="navli"><a href="" class="ataglist">Profile</a></li>
+            <li class="navli"><a href="" class="ataglist">Hobbies</a></li>
+            <li class="navli"><a href="" class="ataglist">Contact Us</a></li>
+            <li class="navli"><a href="" class="ataglist">About Us</a></li>
+        </ul>
+    </nav>
+    <ul class="navul2">
+        <li class="navli2"><a href="#" class="ataglist">Home</a></li>
+            <li class="navli2"><a href="" class="ataglist">Profile</a></li>
+            <li class="navli2"><a href="" class="ataglist">Hobbies</a></li>
+            <li class="navli2"><a href="" class="ataglist">Contact Us</a></li>
+            <li class="navli2"><a href="" class="ataglist">About Us</a></li>
+    </ul>
+    <div class="container">
+        <div class="maindata">
+            <div class="initialinfo">
+                <span class="hello">
+                    Hello! Everyone,
+                </span>
+                <span class="iam">
+                    I'm
+                </span>
+                <span class="mainname">
+                    Asadullah
+                </span>
+                <span class="somedata">
+
+                </span>               
+            </div>
+            <div class="mainimage">
+                <img src="./Images/PicsArt_05-13-08.01.20.jpg" alt="" class="mainimage">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
