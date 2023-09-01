@@ -4,22 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        body{
-            background-color: gray;
-        }
         nav.navbar{
             display: flex;
             position: absolute;
+            top: calc(0vh);
+            left: calc(0vw);
             height: calc(9vh);
-            width: calc(100vw);
-            background-color: black;
+            width: 100%;
+            background-color: gray;
         }
         nav.navmbl{
             display: flex;
             position: absolute;
+            top: calc(0vh);
+            left: calc(0vw);
             height: calc(7vh);
-            width: calc(100vw);
-            background-color: black;
+            width: 100%;
+            background-color: gray;
         }
         ul.navul{
             margin-left: calc(60vw);
@@ -28,6 +29,11 @@
             text-decoration: none;
             color: skyblue;
             text-shadow: -2px 2px 3px red;
+        }
+        a.ataglist2{
+            text-decoration: none;
+            color: rgb(255, 184, 52);
+            text-shadow: -3px 3px 2px darkblue;
         }
         div.icon{
             display: flex;
@@ -50,15 +56,45 @@
             color: whitesmoke;
             font-size: larger;
             text-shadow: 2px 2px 4px skyblue;
+            cursor: pointer;
         }
         div.menu{
             display: none;
+            position: absolute;
+            top: calc(0vh);
+            left: calc(90vw);
+            height: calc(4vh);
+            width: calc(4vw);
+            background-color: none;
         }
-        ul.navul2{
+        img.menu{
+            display: inherit;
+            position: inherit;
+        }
+        ol.navol2{
             display: none;
+            position: absolute;
+            top: calc(4.5vh);
+            left: calc(50vw);
+            height: calc(55vh);
+            width: calc(50vw);
+            background-color: rgb(158, 9, 9);
+        }
+        li.navli2{
+            list-style-type: none;
+            margin-top: calc(5vh);
+            font-size: calc(3vh);
+            top: calc(10vh);
+            height: calc(5vh);
+            width: inherit;
+            padding-left: calc(14vw);
+            justify-content: center;
+            border-bottom: 1px solid rgb(133, 236, 252);
+            padding-bottom: calc(0.8vh);
+            cursor: pointer;
         }
         div.maindata{
-            display: flex;
+            display: none;
             position: absolute;
             top: calc(12vh);
             left: calc(5vw);
@@ -127,10 +163,187 @@
             height: inherit;
             width: inherit;
         }
+        @media only screen and (min-width: 350px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+            }
+            div.menu{
+                display: flex;
+            }
+            ol.navol2{
+                display: block;
+                margin-left: calc(-10vw);
+            }
+            li.navli2{
+                font-size: calc(2vh);
+                padding-right: calc(-20vw);
+                padding-bottom: calc(1vh);
+            }
+            /* nav.navbar{
+                width: 110%;
+            } */
+        }
+        @media only screen and (min-width: 400px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+            }
+            div.menu{
+                display: flex;
+                left: calc(80vw);
+                top: calc(2.5vh);
+                width: calc(5vw);
+            }
+            ol.navol2{
+                display: block;
+                width: calc(40vw);
+            }
+            li.navli2{
+                font-size: calc(2vh);
+                padding-bottom: calc(1vh);
+            }
+        }
+        @media only screen and (min-width: 500px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+            }
+            div.menu{
+                display: flex;
+                top: calc(2vh);
+                left: calc(82vw);
+                height: calc(4vh);
+                width: calc(4vw);
+            }
+            ol.navol2{
+                display: block;
+                margin-right: calc(50vw);
+            }
+            li.navli2{
+                font-size: calc(1.8vh);
+                padding-left: calc(17vw);
+                padding-bottom: calc(1vh);
+            }
+        }
+        @media only screen and (min-width: 600px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+            }
+            div.menu{
+                display: flex;
+                left: calc(83vw);
+                top: calc(2vh);
+                width: calc(4vw);
+            }
+            ol.navol2{
+                display: block;
+                width: calc(45vw);
+            }
+            li.navli2{
+                padding-left: calc(20vw);
+                padding-bottom: calc(1vh);
+            }
+        }
+        @media only screen and (min-width: 700px){
+            ul.navul{
+                display: none;
+            }
+            div.menu{
+                display: flex;
+                height: calc(5vh);
+                width: calc(6vw);
+                top: calc(2.5vh);
+                left: calc(105vw);
+            }
+            div.icon{
+                font-size: calc(7vh);
+            }
+            nav.navbar{
+                height: calc(10vh);
+            }
+            ol.navol2{
+                display: block;
+                top: calc(7.5vh);
+                left: calc(75vw);
+                width: calc(45vw);
+            }
+            li.navli2{
+                padding-left: calc(18vw);
+                padding-bottom: calc(1vh);
+            }
+            nav.navbar{
+                width: 117%;
+            }
+        }
+        @media only screen and  (min-width: 800px){
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            ul.navul{
+                display: flex;
+                margin-left: calc(34vw);
+                font-size: calc(1.8vh);
+            }
+            nav.navbar{
+                height: calc(6vh);
+            }
+            li.navli{
+                padding-left: calc(1vw);
+            }
+            div.icon{
+                font-size: calc(4vh);
+            }
+        }
+        @media only screen and (min-width : 895px){
+            ul.navul{
+                display: flex;
+                font-size: calc(2vh);
+                margin-left: calc(34vw);
+            }
+            div.icon{
+                font-size: calc(4.5vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1024px){
+            ul.navul{
+                display: flex;
+                font-size: calc(2vh);
+                margin-left: calc(35vw);
+            }
+            div.icon{
+                font-size: calc(4vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
         @media only screen and (min-width: 1280px){
             ul.navul{
+                display: flex;
                 font-size: calc(2.5vh);
-                margin-left: calc(50vw);
+                margin-left: calc(37vw);
             }
             li.navli{
                 margin-top: calc(-1vh);
@@ -141,11 +354,24 @@
             nav.navbar{
                 height: calc(7.5vh);
             }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
         }
-        @media only screen and (min-width: 1400px){
+        @media only screen and (min-width: 1440px){
             ul.navul{
+                display: flex;
                 font-size: calc(2.8vh);
-                margin-left: calc(50vw);
+                margin-left: calc(35vw);
             }
             li.navli{
                 margin-bottom: calc(2vh);
@@ -157,11 +383,18 @@
             nav.navbar{
                 height: calc(8vh);
             }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
         }
         @media only screen and (min-width: 1600px){
             ul.navul{
+                display: flex;
                 font-size: calc(3vh);
-                margin-left: calc(46vw);
+                margin-left: calc(32vw);
             }
             li.navli{
                 margin-bottom: calc(2vh);
@@ -173,11 +406,24 @@
             nav.navbar{
                 height: calc(9vh);
             }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
         }
         @media only screen and (min-width: 1800px){
             ul.navul{
+                display: flex;
                 font-size: xx-large;
-                margin-left: calc(42vw);
+                margin-left: calc(34vw);
             }
             div.icon{
                 font-size: calc(5.5vh);
@@ -189,11 +435,18 @@
             li.navli{
                 margin-top: -5px;
             }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
         }
         @media only screen and (min-width: 1920px){
             ul.navul{
+                display: flex;
                 font-size: xx-large;
-                margin-left: calc(47vw);
+                margin-left: calc(36vw);
             }
             div.icon{
                 font-size: calc(5.5vh);
@@ -201,13 +454,26 @@
             nav.navbar{
                 height: calc(9vh);
             }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
         }
+
     </style>
 </head>
 <body>
     <nav class="navbar navmbl">
         <div class="icon">Portfolio</div>
-        <div class="menu"><img src="./Images/list.svg" alt="" class="menu"></div>
+        <div class="menu"><img src="./images/menuicon.svg" alt="" class="menu"></div>
         <ul class="navul">
             <li class="navli"><a href="#" class="ataglist">Home</a></li>
             <li class="navli"><a href="" class="ataglist">Profile</a></li>
@@ -216,13 +482,13 @@
             <li class="navli"><a href="" class="ataglist">About Us</a></li>
         </ul>
     </nav>
-    <ul class="navul2">
-        <li class="navli2"><a href="#" class="ataglist">Home</a></li>
-            <li class="navli2"><a href="" class="ataglist">Profile</a></li>
-            <li class="navli2"><a href="" class="ataglist">Hobbies</a></li>
-            <li class="navli2"><a href="" class="ataglist">Contact Us</a></li>
-            <li class="navli2"><a href="" class="ataglist">About Us</a></li>
-    </ul>
+    <ol class="navol2">
+        <li class="navli2"><a href="#" class="ataglist2">Home</a></li>
+            <li class="navli2"><a href="" class="ataglist2">Profile</a></li>
+            <li class="navli2"><a href="" class="ataglist2">Hobbies</a></li>
+            <li class="navli2"><a href="" class="ataglist2">Contact Us</a></li>
+            <li class="navli2" style="border: none;"><a href="" class="ataglist2">About Us</a></li>
+    </ol>
     <div class="container">
         <div class="maindata">
             <div class="initialinfo">
