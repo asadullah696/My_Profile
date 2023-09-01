@@ -10,7 +10,7 @@
         nav.navbar{
             display: flex;
             position: absolute;
-            height: calc(7vh);
+            height: calc(9vh);
             width: calc(100vw);
             background-color: black;
         }
@@ -60,7 +60,7 @@
         div.maindata{
             display: flex;
             position: absolute;
-            top: calc(10vh);
+            top: calc(12vh);
             left: calc(5vw);
             height: calc(50vh);
             width: calc(90vw);
@@ -127,120 +127,79 @@
             height: inherit;
             width: inherit;
         }
-        @media only screen and (max-width: 1350px){
+        @media only screen and (min-width: 1280px){
             ul.navul{
-                font-size: medium;
-                margin-left: calc(55vw);
-                /* background-color: aliceblue;
-                height: inherit;
-                margin-bottom: calc(15vh); */
-            }
-            nav.navbar{
-                display: flex;
-                position: absolute;
-                height: calc(8vh);
-                width: calc(100vw);
-            }
-            div.icon{
-                font-size: x-large;
-            }
-        }
-        @media only screen and (max-width: 1300px){
-            ul.navul{
+                font-size: calc(2.5vh);
                 margin-left: calc(50vw);
             }
-        }
-        @media only screen and (max-width: 1150px ){
-            ul.navul{
-                margin-left: calc(47vw);
-                font-size: medium;
-            }
-        }
-        @media only screen and (max-width: 1000px){
-            ul.navul{
-                margin-left: calc(35vw);
-                font-size: small;
-            }
-            nav.navbar{
-                height: calc(6vh);
-            }
-        }
-        @media only screen and (max-width: 875px){
             li.navli{
-                display: inline-block;
-            }
-            nav.navbar{
-                height: calc(6vh);
-            }
-            nav.navmbl{
-                display: flex;
-            }
-            ul.navul{
-                margin-left: calc(32vw);
-                font-size: medium;
+                margin-top: calc(-1vh);
             }
             div.icon{
+                font-size: calc(5.2vh);
+            }
+            nav.navbar{
+                height: calc(7.5vh);
+            }
+        }
+        @media only screen and (min-width: 1400px){
+            ul.navul{
+                font-size: calc(2.8vh);
+                margin-left: calc(50vw);
+            }
+            li.navli{
+                margin-bottom: calc(2vh);
+                margin-top: calc(-2vh);
+            }
+            div.icon{
+                font-size: calc(5.3vh);
+            }
+            nav.navbar{
+                height: calc(8vh);
+            }
+        }
+        @media only screen and (min-width: 1600px){
+            ul.navul{
+                font-size: calc(3vh);
+                margin-left: calc(46vw);
+            }
+            li.navli{
+                margin-bottom: calc(2vh);
+                margin-top: calc(-2vh);
+            }
+            div.icon{
+                font-size: calc(5.5vh);
+            }
+            nav.navbar{
+                height: calc(9vh);
+            }
+        }
+        @media only screen and (min-width: 1800px){
+            ul.navul{
                 font-size: xx-large;
-            }
-        }
-        @media only screen and (max-width : 768px){
-            nav.navbar{
-                height: calc(6vh);
+                margin-left: calc(42vw);
             }
             div.icon{
-                display: flex;
-                position: absolute;
-                left: calc(0vw);
-                top: calc(0vh);
-                height: calc(1vh);
-                width: 15vw;
-                font-size: x-large;
-                text-align: center;
+                font-size: calc(5.5vh);
+                margin-top: 3px;
             }
-            ul.navul{
-                margin-left: calc(25vw);
-                font-size: small;
+            nav.navbar{
+                height: calc(9vh);
+            }
+            li.navli{
+                margin-top: -5px;
             }
         }
-        @media only screen and (max-width: 715px){
+        @media only screen and (min-width: 1920px){
             ul.navul{
-                display: none;
+                font-size: xx-large;
+                margin-left: calc(47vw);
             }
-            div.menu{
-                display: flex;
-                position: absolute;
-                left: calc(90vw);
-                height: calc(6vh);
-                width: calc(6vw);
-                background-color: white;
+            div.icon{
+                font-size: calc(5.5vh);
             }
-            img.menu{
-                display: inherit;
-                position: inherit;
-                height: inherit;
-                width: inherit;
-            }
-            ul.navul2{
-                display: none;
-                position: absolute;
-                top: calc(5vh);
-                left: calc(50vw);
-                height: calc(50vh);
-                width: calc(43vw);
-                background-color: darkred;
-                /* left: calc(60vw); */
-            }
-            li.navli2{
-                height: calc(8.5vh);
-                padding-top: calc(8vh);
-                padding-left: calc(12vw);
-                margin-right: calc(6vw);
-                list-style-type: none;
-                border-top: 1px solid black;
-                text-justify: center;
-                padding-top: calc(1vh);
-                font-size: larger;
-                text-shadow: -2px 2px 3px greenyellow;
+            nav.navbar{
+                height: calc(9vh);
             }
         }
     </style>
