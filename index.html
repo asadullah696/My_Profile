@@ -10,25 +10,15 @@
             top: calc(0vh);
             left: calc(0vw);
             height: calc(9vh);
-            width: 100%;
-            background-color: gray;
-        }
-        nav.navmbl{
-            display: flex;
-            position: absolute;
-            top: calc(0vh);
-            left: calc(0vw);
-            height: calc(7vh);
-            width: 100%;
-            background-color: gray;
-        }
-        ul.navul{
-            margin-left: calc(60vw);
+            width: calc(100vw);
+            border-bottom: 1px solid black;
+            border-radius: 0px 0px 10px 10px;
+            background-color: rgb(163, 165, 165);
         }
         a.ataglist{
             text-decoration: none;
-            color: skyblue;
-            text-shadow: -2px 2px 3px red;
+            color: rgb(193, 230, 108);
+            text-shadow: -3px 3px 3px rgb(141, 0, 0);
         }
         a.ataglist2{
             text-decoration: none;
@@ -53,10 +43,11 @@
             margin-left: 10px;
             display: inline-block;
             padding-left: 20px;
-            color: whitesmoke;
+            color: rgb(0, 255, 13);
             font-size: larger;
             text-shadow: 2px 2px 4px skyblue;
             cursor: pointer;
+            border-left: 2px solid black;
         }
         div.menu{
             display: none;
@@ -75,7 +66,7 @@
             display: none;
             position: absolute;
             top: calc(4.5vh);
-            left: calc(50vw);
+            left: calc(0vw);
             height: calc(55vh);
             width: calc(50vw);
             background-color: rgb(158, 9, 9);
@@ -87,11 +78,20 @@
             top: calc(10vh);
             height: calc(5vh);
             width: inherit;
-            padding-left: calc(14vw);
+            text-align: center;
             justify-content: center;
             border-bottom: 1px solid rgb(133, 236, 252);
             padding-bottom: calc(0.8vh);
             cursor: pointer;
+        }
+        div.cutmenu{
+            display: none;
+            position: absolute;
+            top: calc(1.5vh);
+            left: calc(90vw);
+            height: calc(6vh);
+            width: calc(4vw);
+            background-color: none;
         }
         div.maindata{
             display: none;
@@ -172,40 +172,51 @@
             }
             div.menu{
                 display: flex;
+                top: calc(3vh); 
+                width: calc(4vh);
+                left: calc(85vw);
             }
             ol.navol2{
-                display: block;
-                margin-left: calc(-10vw);
+                display: none;
+                top: calc(7vh);
+                margin-left: calc(37vw);
             }
             li.navli2{
                 font-size: calc(2vh);
-                padding-right: calc(-20vw);
-                padding-bottom: calc(1vh);
             }
-            /* nav.navbar{
-                width: 110%;
-            } */
+            div.icon{
+                top: calc(1.4vh);
+                font-size: calc(4vh);
+            }
+            nav.navbar{
+                width: calc(100vw);
+            }
         }
-        @media only screen and (min-width: 400px){
+            @media only screen and (min-width: 400px){
             ul.navul{
                 display: none;
             }
             ul.navul2{
                 display: flex;
+                width: calc(60vw);
             }
             div.menu{
                 display: flex;
-                left: calc(80vw);
-                top: calc(2.5vh);
-                width: calc(5vw);
+                left: calc(87vw);
+                top: calc(3.5vh);
+                width: calc(6vw);
             }
             ol.navol2{
-                display: block;
-                width: calc(40vw);
+                display: none;
+                margin-top: calc(2.2vh);
+                margin-left: calc(30vw);
+                width: calc(60vw);
+            }
+            div.icon{
+                font-size: calc(4vh);
             }
             li.navli2{
                 font-size: calc(2vh);
-                padding-bottom: calc(1vh);
             }
         }
         @media only screen and (min-width: 500px){
@@ -217,41 +228,44 @@
             }
             div.menu{
                 display: flex;
-                top: calc(2vh);
-                left: calc(82vw);
-                height: calc(4vh);
-                width: calc(4vw);
+                top: calc(3vh);
+                left: calc(88vw);
+                width: calc(6vw);
             }
             ol.navol2{
-                display: block;
-                margin-right: calc(50vw);
+                display: none;
+                left: calc(2vw);
             }
             li.navli2{
                 font-size: calc(1.8vh);
-                padding-left: calc(17vw);
-                padding-bottom: calc(1vh);
+                width: calc(60vw);
+                left: calc(38vw);
+            }
+            div.icon{
+                font-size: calc(5vh);
+                margin-top: calc(-0.9vh);
             }
         }
-        @media only screen and (min-width: 600px){
+       @media only screen and (min-width: 600px){
             ul.navul{
                 display: none;
             }
             ul.navul2{
                 display: flex;
             }
+            div.icon{
+                font-size: calc(6vh);
+                margin-bottom: calc(-0.8vh);
+            }
             div.menu{
                 display: flex;
-                left: calc(83vw);
-                top: calc(2vh);
-                width: calc(4vw);
+                left: calc(88vw);
+                top: calc(2.5vh);
+                width: calc(6vw);
             }
             ol.navol2{
-                display: block;
-                width: calc(45vw);
-            }
-            li.navli2{
-                padding-left: calc(20vw);
-                padding-bottom: calc(1vh);
+                display: none;
+                width: calc(62vw);
             }
         }
         @media only screen and (min-width: 700px){
@@ -263,7 +277,7 @@
                 height: calc(5vh);
                 width: calc(6vw);
                 top: calc(2.5vh);
-                left: calc(105vw);
+                left: calc(90vw);
             }
             div.icon{
                 font-size: calc(7vh);
@@ -272,17 +286,8 @@
                 height: calc(10vh);
             }
             ol.navol2{
-                display: block;
-                top: calc(7.5vh);
-                left: calc(75vw);
-                width: calc(45vw);
-            }
-            li.navli2{
-                padding-left: calc(18vw);
-                padding-bottom: calc(1vh);
-            }
-            nav.navbar{
-                width: 117%;
+                display: none;
+                margin-top: calc(3.1vh);
             }
         }
         @media only screen and  (min-width: 800px){
@@ -294,11 +299,12 @@
             }
             ul.navul{
                 display: flex;
-                margin-left: calc(34vw);
-                font-size: calc(1.8vh);
+                margin: calc(2.5vh) calc(0vw) calc(1.5vh) calc(63vw);
+                font-size: calc(1vh);
             }
             nav.navbar{
                 height: calc(6vh);
+                width: calc(100vw);
             }
             li.navli{
                 padding-left: calc(1vw);
@@ -310,8 +316,8 @@
         @media only screen and (min-width : 895px){
             ul.navul{
                 display: flex;
-                font-size: calc(2vh);
-                margin-left: calc(34vw);
+                font-size: calc(1vh);
+                margin: calc(2.5vh) calc(0vw) calc(1.5vh) calc(65vw);
             }
             div.icon{
                 font-size: calc(4.5vh);
@@ -326,8 +332,8 @@
         @media only screen and (min-width: 1024px){
             ul.navul{
                 display: flex;
-                font-size: calc(2vh);
-                margin-left: calc(35vw);
+                font-size: calc(1.5vh);
+                margin: calc(2vh) calc(0vw) calc(1.5vh) calc(57vw);
             }
             div.icon{
                 font-size: calc(4vh);
@@ -342,8 +348,8 @@
         @media only screen and (min-width: 1280px){
             ul.navul{
                 display: flex;
-                font-size: calc(2.5vh);
-                margin-left: calc(37vw);
+                font-size: calc(1.5vh);
+                margin: calc(3.5vh) calc(0vw) calc(2vh) calc(65vw);
             }
             li.navli{
                 margin-top: calc(-1vh);
@@ -370,12 +376,11 @@
         @media only screen and (min-width: 1440px){
             ul.navul{
                 display: flex;
-                font-size: calc(2.8vh);
-                margin-left: calc(35vw);
+                font-size: calc(2vh);
+                margin: calc(3.5vh) calc(0vw) calc(0vh) calc(60vw);
             }
             li.navli{
                 margin-bottom: calc(2vh);
-                margin-top: calc(-2vh);
             }
             div.icon{
                 font-size: calc(5.3vh);
@@ -393,15 +398,43 @@
         @media only screen and (min-width: 1600px){
             ul.navul{
                 display: flex;
-                font-size: calc(3vh);
-                margin-left: calc(32vw);
+                font-size: calc(2vh);
+                margin: calc(4vh) calc(0vw) calc(1vh) calc(65vw);
             }
             li.navli{
                 margin-bottom: calc(2vh);
-                margin-top: calc(-2vh);
             }
             div.icon{
                 font-size: calc(5.5vh);
+            }
+            nav.navbar{
+                height: calc(9vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1700px){
+            ul.navul{
+                display: flex;
+                font-size: calc(1.8vh);
+                margin-left: calc(65vw);
+                margin: calc(4.5vh) calc(0vw) calc(0.5vh) calc(67vw);
+            }
+            li.navli{
+                margin-bottom: calc(2vh);
+            }
+            div.icon{
+                font-size: calc(6vh);
             }
             nav.navbar{
                 height: calc(9vh);
@@ -422,8 +455,8 @@
         @media only screen and (min-width: 1800px){
             ul.navul{
                 display: flex;
-                font-size: xx-large;
-                margin-left: calc(34vw);
+                font-size: calc(2vh);
+                margin: calc(4vh) calc(0vw) calc(0.5vh) calc(65vw);
             }
             div.icon{
                 font-size: calc(5.5vh);
@@ -431,9 +464,6 @@
             }
             nav.navbar{
                 height: calc(9vh);
-            }
-            li.navli{
-                margin-top: -5px;
             }
             div.menu{
                 display: none;
@@ -445,8 +475,8 @@
         @media only screen and (min-width: 1920px){
             ul.navul{
                 display: flex;
-                font-size: xx-large;
-                margin-left: calc(36vw);
+                font-size: calc(2vh);
+                margin: calc(4.5vh) calc(0vw) calc(0vh) calc(65vw);
             }
             div.icon{
                 font-size: calc(5.5vh);
@@ -473,16 +503,19 @@
 <body>
     <nav class="navbar navmbl">
         <div class="icon">Portfolio</div>
-        <div class="menu"><img src="./images/menuicon.svg" alt="" class="menu"></div>
+        <div class="menu" onclick="menuButton()" id="menu"><img src="./images/menuicon.svg" alt="" class="menu"></div>
+        <div class="cutmenu" id="cutMenu" onclick="hideCross()">
+            <img src="./images/crossicon.png" alt="" >
+        </div>
         <ul class="navul">
-            <li class="navli"><a href="#" class="ataglist">Home</a></li>
+            <li class="navli" style="border: none;"><a href="#" class="ataglist">Home</a></li>
             <li class="navli"><a href="" class="ataglist">Profile</a></li>
             <li class="navli"><a href="" class="ataglist">Hobbies</a></li>
             <li class="navli"><a href="" class="ataglist">Contact Us</a></li>
             <li class="navli"><a href="" class="ataglist">About Us</a></li>
         </ul>
     </nav>
-    <ol class="navol2">
+    <ol class="navol2" id="navol2">
         <li class="navli2"><a href="#" class="ataglist2">Home</a></li>
             <li class="navli2"><a href="" class="ataglist2">Profile</a></li>
             <li class="navli2"><a href="" class="ataglist2">Hobbies</a></li>
@@ -506,9 +539,22 @@
                 </span>               
             </div>
             <div class="mainimage">
-                <img src="./Images/PicsArt_05-13-08.01.20.jpg" alt="" class="mainimage">
+                <img src="" alt="" class="mainimage">
             </div>
         </div>
     </div>
+
+    <script>
+        function menuButton(){
+            let navlist = document.getElementById("navol2").style.display = "block";
+            let cutMenu = document.getElementById("cutMenu").style.display = "flex";
+            let menu = document.getElementById("menu").style.display = "none"
+        }
+        function hideCross(){
+            let hideCross = document.getElementById("cutMenu").style.display = "none"
+            let menu = document.getElementById("menu").style.display = "flex"
+            let navlist = document.getElementById("navol2").style.display = "none";
+        }
+    </script>
 </body>
 </html>
