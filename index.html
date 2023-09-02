@@ -94,13 +94,13 @@
             background-color: none;
         }
         div.maindata{
-            display: none;
+            display: flex;
             position: absolute;
             top: calc(12vh);
             left: calc(5vw);
-            height: calc(50vh);
+            height: calc(60vh);
             width: calc(90vw);
-            background-color: aqua;
+            /* background-color: aqua; */
         }
         div.initialinfo{
             display: flex;
@@ -109,7 +109,7 @@
             left: calc(5vw);
             height: calc(30vh);
             width: calc(40vw);
-            background-color: gray;
+            /* background-color: gray; */
         }
         span.hello{
             display: flex;
@@ -147,21 +147,35 @@
             font-family: cursive;
             /* background-color: red; */
         }
-        
+        span.profession{
+            display: flex;
+            position: absolute;
+            top: calc(16vh);
+            left: calc(13vw);
+            height: calc(10vh);
+            width: calc(20vw);
+            /* background-color: white; */
+            font-size: calc(4vh);
+            color: darkmagenta;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: -2px 3px 3px black;
+        }
         div.mainimage{
             display: flex;
             position: absolute;
             top: calc(5vh);
-            left: calc(50vw);
-            height: calc(30vh);
-            width: calc(35vw);
-            background-color: gray;
+            left: calc(55vw);
+            border-radius: 200px;
+            height: calc(50vh);
+            width: calc(24vw);
+            /* background-color: gray; */
         }
         img.mainimage{
             display: flex;
             position: absolute;
             height: inherit;
             width: inherit;
+            border-radius: inherit;
         }
         @media only screen and (min-width: 350px){
             ul.navul{
@@ -526,7 +540,7 @@
         <div class="maindata">
             <div class="initialinfo">
                 <span class="hello">
-                    Hello! Everyone,
+                    Hi! Everyone,
                 </span>
                 <span class="iam">
                     I'm
@@ -536,10 +550,13 @@
                 </span>
                 <span class="somedata">
 
-                </span>               
+                </span>   
+                <span class="profession">
+                    (Mechanical Engineer)
+                </span>            
             </div>
             <div class="mainimage">
-                <img src="" alt="" class="mainimage">
+                <img src="./images/mainimage.jpg" alt="" class="mainimage">
             </div>
         </div>
     </div>
