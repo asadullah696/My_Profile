@@ -1,0 +1,978 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./hobbies.css">
+    <style>
+        nav.navbar{
+            display: flex;
+            position: absolute;
+            top: calc(0vh);
+            left: calc(0vw);
+            height: calc(9vh);
+            width: calc(100vw);
+            border-bottom: 1px solid black;
+            border-radius: 0px 0px 10px 10px;
+            background-color: rgb(163, 165, 165);
+        }
+        a.ataglist{
+            text-decoration: none;
+            color: rgb(193, 230, 108);
+            text-shadow: -3px 3px 3px rgb(141, 0, 0);
+        }
+        a.ataglist2{
+            text-decoration: none;
+            color: rgb(255, 184, 52);
+            text-shadow: -3px 3px 2px darkblue;
+        }
+        div.icon{
+            display: flex;
+            text-shadow: -3px 3px 4px lightgreen;
+            position: absolute;
+            width: calc(20vw);
+            height: calc(5vh);
+            margin-top: calc(0vh);
+            padding: 1.5px;
+            color: whitesmoke;
+            font-size: xx-large;
+            /* background-color: bisque; */
+            font-family: cursive;
+            margin-left: calc(2vw);
+        }
+        li.navli{
+            margin-left: 10px;
+            display: inline-block;
+            padding-left: 20px;
+            color: rgb(0, 255, 13);
+            font-size: larger;
+            text-shadow: 2px 2px 4px skyblue;
+            cursor: pointer;
+            border-left: 2px solid black;
+        }
+        div.menu{
+            display: none;
+            position: absolute;
+            top: calc(0vh);
+            left: calc(90vw);
+            height: calc(4vh);
+            width: calc(4vw);
+            background-color: none;
+        }
+        img.menu{
+            display: inherit;
+            position: inherit;
+        }
+        ol.navol2{
+            display: none;
+            position: absolute;
+            top: calc(4.5vh);
+            left: calc(0vw);
+            height: calc(55vh);
+            z-index: 1;
+            width: calc(50vw);
+            background-color: rgb(158, 9, 9);
+        }
+        li.navli2{
+            list-style-type: none;
+            margin-top: calc(5vh);
+            font-size: calc(3vh);
+            top: calc(10vh);
+            height: calc(5vh);
+            width: inherit;
+            text-align: center;
+            justify-content: center;
+            border-bottom: 1px solid rgb(133, 236, 252);
+            padding-bottom: calc(0.8vh);
+            cursor: pointer;
+        }
+        div.cutmenu{
+            display: none;
+            position: absolute;
+            top: calc(1.5vh);
+            left: calc(90vw);
+            height: calc(6vh);
+            width: calc(4vw);
+            background-color: none;
+        }
+        div.maindata{
+            display: flex;
+            position: absolute;
+            top: calc(12vh);
+            left: calc(5vw);
+            height: calc(60vh);
+            width: calc(90vw);
+            /* background-color: aqua; */
+        }
+        div.initialinfo{
+            display: flex;
+            position: absolute;
+            top: calc(10vh);
+            left: calc(5vw);
+            height: calc(30vh);
+            width: calc(40vw);
+            /* background-color: gray; */
+        }
+        span.hello{
+            display: flex;
+            position: absolute;
+            top: calc(1vh);
+            left: calc(2vw);
+            height: calc(5vh);
+            width: calc(50vw);
+            /* background-color: blue; */
+            font-size: calc(4vh);
+            text-shadow: -2px 2px 3px white;
+        }
+        span.iam{
+            display: flex;
+            position: absolute;
+            top: calc(6vh);
+            padding-top: calc(1vh);
+            left: calc(2vw);
+            height: calc(4vh);
+            width: calc(6vw);
+            font-size: calc(3vh);
+            text-shadow: -2px 2px 3px white;
+            /* background-color: blueviolet; */
+        }
+        span.mainname{
+            display: flex;
+            position: absolute;
+            top: calc(10vh);
+            left: calc(2vw);
+            height: calc(6vh);
+            width: calc(20vw);
+            font-size: calc(5vh);
+            color: red;
+            text-shadow: -2px 2px 3px black;
+            font-family: cursive;
+            /* background-color: red; */
+        }
+        span.profession{
+            display: flex;
+            position: absolute;
+            top: calc(16vh);
+            left: calc(13vw);
+            height: calc(10vh);
+            width: calc(20vw);
+            /* background-color: white; */
+            font-size: calc(4vh);
+            color: darkmagenta;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: -2px 3px 3px black;
+        }
+        div.mainimage{
+            display: flex;
+            position: absolute;
+            top: calc(5vh);
+            left: calc(55vw);
+            border-radius: 200px;
+            height: calc(24vw);
+            width: calc(24vw);
+            z-index: -1;
+            /* background-color: gray; */
+        }
+        img.mainimage{
+            display: flex;
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+        }
+        div.asad{
+    display: flex;
+    position: absolute;
+    top: calc(90vh);
+    left: calc(10vw);
+    /* height: calc(1000vh); */
+    width: calc(80vw);
+    background-color: rgb(255, 255, 255);
+}
+h1.maintitle{
+    display: flex;
+    position: absolute;
+    top: calc(0vh);
+    left: calc(15vw);
+    height: calc(8vh);
+    width: calc(60vw);
+    font-size: calc(3vw);
+    color: brown;
+    text-shadow: 3px 3px 3px rgb(255, 0, 0);
+}
+h2.chapter1{
+    display: flex;
+    position: absolute;
+    top: calc(20vh);
+    left: calc(5vw);
+    height: calc(8vh);
+    width: calc(30vw);
+    font-size: calc(2.5vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter1{
+    display: flex;
+    position: absolute;
+    top: calc(30vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter2{
+    display: flex;
+    position: absolute;
+    top: calc(60vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(30vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter2{
+    display: flex;
+    position: absolute;
+    top: calc(72vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter3{
+    display: flex;
+    position: absolute;
+    top: calc(108vh);
+    left: calc(5vw);
+    height: calc(10vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter3{
+    display: flex;
+    position: absolute;
+    top: calc(122vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter4{
+    display: flex;
+    position: absolute;
+    top: calc(165vh);
+    left: calc(5vw);
+    height: calc(10vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter4{
+    display: flex;
+    position: absolute;
+    top: calc(180vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter5{
+    display: flex;
+    position: absolute;
+    top: calc(222vh);
+    left: calc(5vw);
+    height: calc(10vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter5{
+    display: flex;
+    position: absolute;
+    top: calc(234vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter6{
+    display: flex;
+    position: absolute;
+    top: calc(272vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter6{
+    display: flex;
+    position: absolute;
+    top: calc(287vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(10vh);
+    font-size: calc(2vw);
+}
+h2.chapter7{
+    display: flex;
+    position: absolute;
+    top: calc(325vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(30vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter7{
+    display: flex;
+    position: absolute;
+    top: calc(340vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(10vh);
+    font-size: calc(2vw);
+}
+h2.chapter8{
+    display: flex;
+    position: absolute;
+    top: calc(380vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(30vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter8{
+    display: flex;
+    position: absolute;
+    top: calc(395vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(10vh);
+    font-size: calc(2vw);
+}div.welcomenote{
+    display: flex;
+    position: absolute;
+    bottom: calc(10vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(80vw);
+    font-size: calc(5vw);
+    color: lightsalmon;
+    text-shadow: 3px 3px 3px darkmagenta;
+    /* background-color: lightblue; */
+}
+        @media only screen and (min-width: 350px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+            }
+            div.asad{
+                top: calc(70vh);
+            }
+            div.welcomenote{
+                font-size: calc(6vw);
+                color: darkblue;
+                left: calc(15vw);
+            }
+            div.menu{
+                display: flex;
+                top: calc(3vh); 
+                width: calc(4vh);
+                left: calc(85vw);
+            }
+            ol.navol2{
+                display: none;
+                top: calc(7vh);
+                margin-left: calc(37vw);
+            }
+            li.navli2{
+                font-size: calc(2vh);
+            }
+            div.icon{
+                top: calc(1.4vh);
+                font-size: calc(4vh);
+            }
+            nav.navbar{
+                width: calc(100vw);
+            }
+            h2.chapter1{
+                top: calc(10vh);
+            }
+            p.chapter1{
+                top: calc(15vh);
+            }
+            h2.chapter2{
+                top: calc(25vh);
+            }
+            p.chapter2{
+                top: calc(30vh);
+            }
+            h2.chapter3{
+                top: calc(40vh);
+            }
+            p.chapter3{
+                top: calc(45vh);
+            }
+            h2.chapter4{
+                top: calc(60vh);
+            }
+            p.chapter4{
+                top: calc(65vh);
+            }
+            h2.chapter5{
+                top: calc(80vh);
+            }
+            p.chapter5{
+                top: calc(85vh);
+            }
+            h2.chapter6{
+                top: calc(100vh);
+            }
+            p.chapter6{
+                top: calc(105vh);
+            }
+            h2.chapter7{
+                top: calc(118vh);
+            }
+            p.chapter7{
+                top: calc(123vh);
+            }
+            h2.chapter8{
+                top: calc(135vh);
+            }
+            p.chapter8{
+                top: calc(140vh);
+            }
+        }
+            @media only screen and (min-width: 400px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+                width: calc(60vw);
+            }
+            div.menu{
+                display: flex;
+                left: calc(87vw);
+                top: calc(3.5vh);
+                width: calc(6vw);
+            }
+            ol.navol2{
+                display: none;
+                margin-top: calc(2.2vh);
+                margin-left: calc(30vw);
+                width: calc(60vw);
+            }
+            div.icon{
+                font-size: calc(4vh);
+            }
+            li.navli2{
+                font-size: calc(2vh);
+            }
+        }
+        @media only screen and (min-width: 500px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+            }
+            div.menu{
+                display: flex;
+                top: calc(3vh);
+                left: calc(88vw);
+                width: calc(6vw);
+            }
+            ol.navol2{
+                display: none;
+                left: calc(2vw);
+            }
+            li.navli2{
+                font-size: calc(1.8vh);
+                width: calc(60vw);
+                left: calc(38vw);
+            }
+            div.icon{
+                font-size: calc(5vh);
+                margin-top: calc(-0.9vh);
+            }
+            p.chapter1{
+                top: calc(18vh);
+            }
+            h2.chapter2{
+                top: calc(35vh);
+            }
+            p.chapter2{
+                top: calc(42vh);
+            }
+            h2.chapter3{
+                top: calc(60vh);
+            }
+            p.chapter3{
+                top: calc(66vh);
+            }
+            h2.chapter4{
+                top: calc(88vh);
+            }
+            p.chapter4{
+                top: calc(95vh);
+            }
+            h2.chapter5{
+                top: calc(120vh);
+            }
+            p.chapter5{
+                top: calc(127vh);
+            }
+            h2.chapter6{
+                top: calc(150vh);
+            }
+            p.chapter6{
+                top: calc(157vh);
+            }
+            h2.chapter7{
+                top: calc(180vh);
+            }
+            p.chapter7{
+                top: calc(187vh);
+            }
+            h2.chapter8{
+                top: calc(210vh);
+            }
+            p.chapter8{
+                top: calc(217vh);
+            }
+        }
+       @media only screen and (min-width: 600px){
+            ul.navul{
+                display: none;
+            }
+            ul.navul2{
+                display: flex;
+            }
+            div.icon{
+                font-size: calc(6vh);
+                margin-bottom: calc(-0.8vh);
+            }
+            div.menu{
+                display: flex;
+                left: calc(88vw);
+                top: calc(2.5vh);
+                width: calc(6vw);
+            }
+            ol.navol2{
+                display: none;
+                width: calc(62vw);
+            }
+        }
+        @media only screen and (min-width: 700px){
+            ul.navul{
+                display: none;
+            }
+            div.menu{
+                display: flex;
+                height: calc(5vh);
+                width: calc(6vw);
+                top: calc(2.5vh);
+                left: calc(90vw);
+            }
+            div.icon{
+                font-size: calc(7vh);
+            }
+            nav.navbar{
+                height: calc(10vh);
+            }
+            ol.navol2{
+                display: none;
+                margin-top: calc(3.1vh);
+            }
+            p.chapter1{
+                top: calc(28vh);
+            }h2.chapter2{
+                top: calc(55vh);
+            }
+            p.chapter2{
+                top: calc(65vh);
+            }
+            h2.chapter3{
+                top: calc(90vh);
+            }
+            p.chapter3{
+                top: calc(100vh);
+            }
+            h2.chapter4{
+                top: calc(133vh);
+            }
+            p.chapter4{
+                top: calc(143vh);
+            }
+            h2.chapter5{
+                top: calc(175vh);
+            }
+            p.chapter5{
+                top: calc(185vh);
+            }
+            h2.chapter6{
+                top: calc(210vh);
+            }
+            p.chapter6{
+                top: calc(220vh);
+            }
+            h2.chapter7{
+                top: calc(245vh);
+            }
+            p.chapter7{
+                top: calc(255vh);
+            }
+            h2.chapter8{
+                top: calc(277vh);
+            }
+            p.chapter8{
+                top: calc(287vh);
+            }
+        }
+        @media only screen and  (min-width: 800px){
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            ul.navul{
+                display: flex;
+                margin: calc(2.5vh) calc(0vw) calc(1.5vh) calc(63vw);
+                font-size: calc(1vh);
+            }
+            nav.navbar{
+                height: calc(6vh);
+                width: calc(100vw);
+            }
+            li.navli{
+                padding-left: calc(1vw);
+            }
+            div.icon{
+                font-size: calc(4vh);
+            }
+        }
+        @media only screen and (min-width : 895px){
+            ul.navul{
+                display: flex;
+                font-size: calc(1vh);
+                margin: calc(2.5vh) calc(0vw) calc(1.5vh) calc(65vw);
+            }
+            div.icon{
+                font-size: calc(4.5vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1024px){
+            ul.navul{
+                display: flex;
+                font-size: calc(1.5vh);
+                margin: calc(2vh) calc(0vw) calc(1.5vh) calc(57vw);
+            }
+            div.icon{
+                font-size: calc(4vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1280px){
+            ul.navul{
+                display: flex;
+                font-size: calc(1.5vh);
+                margin: calc(3.5vh) calc(0vw) calc(2vh) calc(65vw);
+            }
+            li.navli{
+                margin-top: calc(-1vh);
+            }
+            div.icon{
+                font-size: calc(5.2vh);
+            }
+            nav.navbar{
+                height: calc(7.5vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1440px){
+            ul.navul{
+                display: flex;
+                font-size: calc(2vh);
+                margin: calc(3.5vh) calc(0vw) calc(0vh) calc(60vw);
+            }
+            li.navli{
+                margin-bottom: calc(2vh);
+            }
+            div.icon{
+                font-size: calc(5.3vh);
+            }
+            nav.navbar{
+                height: calc(8vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1600px){
+            ul.navul{
+                display: flex;
+                font-size: calc(2vh);
+                margin: calc(4vh) calc(0vw) calc(1vh) calc(65vw);
+            }
+            li.navli{
+                margin-bottom: calc(2vh);
+            }
+            div.icon{
+                font-size: calc(5.5vh);
+            }
+            nav.navbar{
+                height: calc(9vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1700px){
+            ul.navul{
+                display: flex;
+                font-size: calc(1.8vh);
+                margin-left: calc(65vw);
+                margin: calc(4.5vh) calc(0vw) calc(0.5vh) calc(67vw);
+            }
+            li.navli{
+                margin-bottom: calc(2vh);
+            }
+            div.icon{
+                font-size: calc(6vh);
+            }
+            nav.navbar{
+                height: calc(9vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1800px){
+            ul.navul{
+                display: flex;
+                font-size: calc(2vh);
+                margin: calc(4vh) calc(0vw) calc(0.5vh) calc(65vw);
+            }
+            div.icon{
+                font-size: calc(5.5vh);
+                margin-top: 3px;
+            }
+            nav.navbar{
+                height: calc(9vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1920px){
+            ul.navul{
+                display: flex;
+                font-size: calc(2vh);
+                margin: calc(4.5vh) calc(0vw) calc(0vh) calc(65vw);
+            }
+            div.icon{
+                font-size: calc(5.5vh);
+            }
+            nav.navbar{
+                height: calc(9vh);
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+            div.menu{
+                display: none;
+            }
+            ol.navol2{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navmbl">
+        <div class="icon">Portfolio</div>
+        <div class="menu" onclick="menuButton()" id="menu"><img src="./images/menuicon.svg" alt="" class="menu"></div>
+        <div class="cutmenu" id="cutMenu" onclick="hideCross()">
+            <img src="./images/crossicon.png" alt="" >
+        </div>
+        <ul class="navul">
+            <li class="navli" style="border: none;"><a href="#" class="ataglist">Home</a></li>
+            <li class="navli"><a href="" class="ataglist">Profile</a></li>
+            <li class="navli"><a href="" class="ataglist">Hobbies</a></li>
+            <li class="navli"><a href="" class="ataglist">Contact Us</a></li>
+            <li class="navli"><a href="" class="ataglist">About Us</a></li>
+        </ul>
+    </nav>
+    <ol class="navol2" id="navol2">
+        <li class="navli2"><a href="#" class="ataglist2">Home</a></li>
+            <li class="navli2"><a href="" class="ataglist2">Profile</a></li>
+            <li class="navli2"><a href="" class="ataglist2">Hobbies</a></li>
+            <li class="navli2"><a href="" class="ataglist2">Contact Us</a></li>
+            <li class="navli2" style="border: none;"><a href="" class="ataglist2">About Us</a></li>
+    </ol>
+    <div class="container">
+        <div class="maindata">
+            <div class="initialinfo">
+                <span class="hello">
+                    Hi! Everyone,
+                </span>
+                <span class="iam">
+                    I'm
+                </span>
+                <span class="mainname">
+                    Asadullah
+                </span>
+                <span class="somedata">
+
+                </span>   
+                <span class="profession">
+                    (Mechanical Engineer)
+                </span>            
+            </div>
+            <div class="mainimage">
+                <img src="./images/mainimage.jpg" alt="" class="mainimage">
+            </div>
+            <div class="welcomenote">
+                Welcome to my Portfolio
+            </div>
+        </div>
+    </div>
+    <div class="asad">
+        <h1 class="maintitle"> Asadullah: The Journey of a Dreamer</h1>
+
+        <h2 class="chapter1"> A Humble Beginning</h2>
+                             <p class="chapter1">
+                             Asadullah, fondly known as "Badshah" among his friends, embarked on his remarkable journey of self-discovery and growth at the age of 23.
+                             Born in a modest family in a small town, his story is a testament to the power of determination and dreams.
+                            </p>
+        <h2 class="chapter2"> Early Education </h2>
+                            <p class="chapter2">
+                            Asadullah's academic journey began with his matriculation in 2017. Despite limited resources and a challenging environment, 
+                            he displayed a remarkable dedication to his studies. His strong work ethic and hunger for knowledge set him apart from his peers.
+                            </p>
+        <h2 class="chapter3"> A Passion for Mechanical Engineering</h2>
+                            <p class="chapter3">
+                            In 2021, Asadullah achieved a significant milestone when he successfully completed his mechanical engineering diploma. 
+                            This achievement was the culmination of years of hard work and perseverance. Mechanical engineering ignited his curiosity about
+                             how machines and systems work, and he was eager to delve deeper into the world of technology.
+                            </p>
+        <h2 class="chapter4"> The Dawn of Web Development</h2>
+                            <p class="chapter4">
+                            Asadullah's thirst for knowledge didn't stop with his diploma. In the same year, he decided to explore the world of web development.
+                             Enrolling in a web development course in late 2021, he embraced the challenges and complexities of coding with enthusiasm.
+                             The digital realm became his canvas, and he painted his dreams with lines of code.
+                            </p>
+        <h2 class="chapter5"> The Chess Master</h2>
+                            <p class="chapter5">
+                            Beyond his academic pursuits, Asadullah had a hidden talent – chess. He had honed his skills from a young age, often participating
+                             in local tournaments. Chess provided him with valuable lessons in strategy, patience, and perseverance, qualities that he would 
+                            later apply to his life's journey.
+                            </p>
+         <h2 class="chapter6"> The Struggle for Success</h2>
+                            <p class="chapter6">
+                            Asadullah's path was never easy. He faced financial constraints, societal expectations, and self-doubt along the way. However,
+                             he never wavered from his goal of becoming a successful person. He believed in himself and his abilities, and this unwavering 
+                             faith propelled him forward.
+                            </p>    
+        <h2 class="chapter7"> The Poet's Heart </h2>
+                            <p class="chapter7">
+                            In moments of solitude, Asadullah often found solace in writing ghazals. His verses were a reflection of his innermost thoughts
+                             and emotions. Through his poetry, he poured his heart out, sharing his dreams and struggles with the world. His words resonated
+                              with those who had faced similar challenges in life.
+                            </p>
+        <h2 class="chapter8"> The Road Ahead </h2>
+                            <p class="chapter8">
+                            Asadullah's journey is still unfolding, and the future holds endless possibilities. With his mechanical engineering knowledge 
+                            and web development skills, he is poised to make his mark in the world of technology. His determination, combined with the strategic 
+                            mindset he developed as a chess player, gives him a unique edge.
+
+                            In the face of adversity, Asadullah remains undeterred, for he knows that every challenge is an opportunity for growth. He continues 
+                            to chase his dreams with the same passion and enthusiasm that led him to embark on this incredible journey. Asadullah, the boy
+                             known as "Badshah" among his friends, is well on his way to becoming a successful person, inspiring others to follow their dreams,
+                              no matter how challenging the path may be.
+                            </p>
+    </div>
+    
+
+
+    <!-- Javascript Section -->
+
+    <script>
+        function menuButton(){
+            let navlist = document.getElementById("navol2").style.display = "block";
+            let cutMenu = document.getElementById("cutMenu").style.display = "flex";
+            let menu = document.getElementById("menu").style.display = "none"
+        }
+        function hideCross(){
+            let hideCross = document.getElementById("cutMenu").style.display = "none"
+            let menu = document.getElementById("menu").style.display = "flex"
+            let navlist = document.getElementById("navol2").style.display = "none";
+        }
+    </script>
+</body>
+</html>
