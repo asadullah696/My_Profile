@@ -407,7 +407,186 @@ div.cutmenu{
     }
     nav.navbar{
         height: calc(9vh);
-    }
+    }div.asad{
+            display: flex;
+            position: absolute;
+            top: calc(80vh);
+            left: calc(10vw);
+            height: calc(1000vh);
+            width: calc(80vw);
+            background-color: rgb(255, 255, 255);
+        }
+        h1.maintitle{
+            display: flex;
+            position: absolute;
+            top: calc(0vh);
+            left: calc(15vw);
+            height: calc(8vh);
+            width: calc(60vw);
+            font-size: calc(3vw);
+            color: brown;
+            text-shadow: 3px 3px 3px rgb(255, 0, 0);
+        }
+        h2.chapter1{
+            display: flex;
+            position: absolute;
+            top: calc(20vh);
+            left: calc(5vw);
+            height: calc(8vh);
+            width: calc(30vw);
+            font-size: calc(2.5vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter1{
+            display: flex;
+            position: absolute;
+            top: calc(30vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(20vh);
+            font-size: calc(2vw);
+        }
+        h2.chapter2{
+            display: flex;
+            position: absolute;
+            top: calc(60vh);
+            left: calc(5vw);
+            height: calc(5vh);
+            width: calc(30vw);
+            font-size: calc(3vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter2{
+            display: flex;
+            position: absolute;
+            top: calc(72vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(20vh);
+            font-size: calc(2vw);
+        }
+        h2.chapter3{
+            display: flex;
+            position: absolute;
+            top: calc(108vh);
+            left: calc(5vw);
+            height: calc(10vh);
+            width: calc(50vw);
+            font-size: calc(3vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter3{
+            display: flex;
+            position: absolute;
+            top: calc(122vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(20vh);
+            font-size: calc(2vw);
+        }
+        h2.chapter4{
+            display: flex;
+            position: absolute;
+            top: calc(165vh);
+            left: calc(5vw);
+            height: calc(10vh);
+            width: calc(50vw);
+            font-size: calc(3vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter4{
+            display: flex;
+            position: absolute;
+            top: calc(180vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(20vh);
+            font-size: calc(2vw);
+        }
+        h2.chapter5{
+            display: flex;
+            position: absolute;
+            top: calc(222vh);
+            left: calc(5vw);
+            height: calc(10vh);
+            width: calc(50vw);
+            font-size: calc(3vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter5{
+            display: flex;
+            position: absolute;
+            top: calc(234vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(20vh);
+            font-size: calc(2vw);
+        }
+        h2.chapter6{
+            display: flex;
+            position: absolute;
+            top: calc(272vh);
+            left: calc(5vw);
+            height: calc(5vh);
+            width: calc(50vw);
+            font-size: calc(3vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter6{
+            display: flex;
+            position: absolute;
+            top: calc(287vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(10vh);
+            font-size: calc(2vw);
+        }
+        h2.chapter7{
+            display: flex;
+            position: absolute;
+            top: calc(325vh);
+            left: calc(5vw);
+            height: calc(5vh);
+            width: calc(30vw);
+            font-size: calc(3vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter7{
+            display: flex;
+            position: absolute;
+            top: calc(340vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(10vh);
+            font-size: calc(2vw);
+        }
+        h2.chapter8{
+            display: flex;
+            position: absolute;
+            top: calc(380vh);
+            left: calc(5vw);
+            height: calc(5vh);
+            width: calc(30vw);
+            font-size: calc(3vw);
+            color: darkturquoise;
+            text-shadow: 3px 3px 3px lightgreen;
+        }
+        p.chapter8{
+            display: flex;
+            position: absolute;
+            top: calc(395vh);
+            left: calc(20vw);
+            width: calc(45vw);
+            height: calc(10vh);
+            font-size: calc(2vw);
+        }
     div.menu{
         display: none;
     }
@@ -420,4 +599,186 @@ div.cutmenu{
     ol.navol2{
         display: none;
     }
+}
+
+
+div.asad{
+    display: flex;
+    position: absolute;
+    top: calc(80vh);
+    left: calc(10vw);
+    height: calc(1000vh);
+    width: calc(80vw);
+    background-color: rgb(255, 255, 255);
+}
+h1.maintitle{
+    display: flex;
+    position: absolute;
+    top: calc(0vh);
+    left: calc(15vw);
+    height: calc(8vh);
+    width: calc(60vw);
+    font-size: calc(3vw);
+    color: brown;
+    text-shadow: 3px 3px 3px rgb(255, 0, 0);
+}
+h2.chapter1{
+    display: flex;
+    position: absolute;
+    top: calc(20vh);
+    left: calc(5vw);
+    height: calc(8vh);
+    width: calc(30vw);
+    font-size: calc(2.5vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter1{
+    display: flex;
+    position: absolute;
+    top: calc(30vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter2{
+    display: flex;
+    position: absolute;
+    top: calc(60vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(30vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter2{
+    display: flex;
+    position: absolute;
+    top: calc(72vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter3{
+    display: flex;
+    position: absolute;
+    top: calc(108vh);
+    left: calc(5vw);
+    height: calc(10vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter3{
+    display: flex;
+    position: absolute;
+    top: calc(122vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter4{
+    display: flex;
+    position: absolute;
+    top: calc(165vh);
+    left: calc(5vw);
+    height: calc(10vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter4{
+    display: flex;
+    position: absolute;
+    top: calc(180vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter5{
+    display: flex;
+    position: absolute;
+    top: calc(222vh);
+    left: calc(5vw);
+    height: calc(10vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter5{
+    display: flex;
+    position: absolute;
+    top: calc(234vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(20vh);
+    font-size: calc(2vw);
+}
+h2.chapter6{
+    display: flex;
+    position: absolute;
+    top: calc(272vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(50vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter6{
+    display: flex;
+    position: absolute;
+    top: calc(287vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(10vh);
+    font-size: calc(2vw);
+}
+h2.chapter7{
+    display: flex;
+    position: absolute;
+    top: calc(325vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(30vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter7{
+    display: flex;
+    position: absolute;
+    top: calc(340vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(10vh);
+    font-size: calc(2vw);
+}
+h2.chapter8{
+    display: flex;
+    position: absolute;
+    top: calc(380vh);
+    left: calc(5vw);
+    height: calc(5vh);
+    width: calc(30vw);
+    font-size: calc(3vw);
+    color: darkturquoise;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+p.chapter8{
+    display: flex;
+    position: absolute;
+    top: calc(395vh);
+    left: calc(20vw);
+    width: calc(45vw);
+    height: calc(10vh);
+    font-size: calc(2vw);
 }
